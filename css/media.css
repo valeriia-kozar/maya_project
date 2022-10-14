@@ -1,0 +1,439 @@
+@media screen and (max-width: 1400px) {
+    
+    .header {
+        width: 980px;
+    }
+
+    .header__nav-item:nth-child(even) {
+        margin: 0 70px;
+    }
+
+    .main__catalog-text {
+        margin: 150px 0 90px;
+        font-size: 34px;
+    }
+
+    .photo {
+        width: 235px;
+        height: 335px;
+        margin-right: 10px
+    }
+
+    .photo_text {
+        width: 235px;
+        height: 67px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .coupon__title, .whatssap__title {
+        text-align: center;
+        font-size: 24px;
+        padding-top: 30px;
+    }
+
+    .catalog_line-one, .catalog_line-two {
+        width: 980px;
+    }
+
+    .photo_one-new, .photo_two-new {
+        width: 480px;
+        height: 450px;
+    }
+
+    .faq {
+        width: 950px;
+    }
+
+    .footer__privacy {
+        width: 980px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 700px;
+    }
+
+    .header__nav-item:nth-child(even) {
+        margin: 0 30px;
+    }
+
+    .header__nav-item-link {
+        font-size: 16px;
+    }
+
+    .tel {
+        font-size: 20px;
+    }
+
+    .icon-phone {
+        font-size: 20px;
+        margin: -2px 12px 0px;
+    }
+
+    .main__catalog-text {
+        margin: 100px 0 50px;
+        font-size: 28px;
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog_line-one, .catalog_line-two {
+        width: 750px;
+    }
+
+    .photo_one-new {
+        width: 360px;
+    }
+
+    .photo_four-new {
+        width: 600px;
+    }
+
+    .photo {
+        width: 320px;
+        height: 430px;
+        margin-bottom: 15px;
+    }
+
+    .photo_text {
+        width: 320px;
+        height: 80px;
+        font-size: 22px;
+        padding-top: 30px;
+    }
+
+    .catalog__first-line, .catalog__second-line {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__catalog-new {
+        margin-bottom: 100px;
+    }
+
+    .coupon__title, .whatssap__title {
+        padding-top: 15px;
+    }
+
+    .coupon__btn, .whatssap__btn {
+        margin-top: 5px;
+        height: 50px;
+    }
+
+    .faq {
+        width: 750px;
+    }
+
+    .footer__privacy {
+        width: 700px;
+    }
+
+    .col__three {
+        margin-left: 30px;
+    }
+
+    .footer__btn {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        width: 400px;
+    }
+
+    .header__bang-text {
+        font-size: 14px;
+    }
+
+    .header__title img {
+        width: 310px;
+        height: 110px;
+    }
+
+    .header__text {
+        font-size: 25px;
+        line-height: 30px;
+    }    
+
+    .header__nav {
+        display: none;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    } 
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        right: 0;
+    }
+      
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 60px;
+        right: 30px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+      
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #fed8f8;
+        transition-duration: .25s;
+    }
+      
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+      
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: rgba(247, 198, 198, .9);
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        transition-duration: .25s;
+    }
+      
+    .menu__item {
+        display: block;
+        padding: 20px 82px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        transition-duration: .25s;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .catalog_line-one, .catalog_line-two {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo_one-new, .photo_two-new, .photo_three-new, .photo_four-new {
+        width: 400px;
+        height: 413px;
+    }
+
+    .photo_four-new {
+        height: 350px;
+    }
+
+    .accordion_title {
+        padding: 50px 0;
+        width: 400px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .coupon__title, .whatssap__title {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 10px;
+        width: 300px;
+    }
+
+    .coupon__btn, .whatssap__btn {
+        margin-top: 0;
+    }
+
+    .coupon__btn, .whatssap__btn {
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .whatssap__text {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .whatssap, .coupon {
+        height: 170px;
+    }
+
+    .accordion {
+        margin-top: 60px;
+    }
+
+    .faq {
+        width: 400px;
+    }
+
+    .faq-title {
+        padding: 20px 0 20px 20px;
+    }
+
+
+    .footer__privacy {
+        width: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .col__two {
+        display: block;
+        margin-top: 8px;
+    }
+
+    .col__three {
+        margin-left: 0;
+    }
+
+    .col__one p:first-child, .col__three p:first-child {
+        margin-bottom: 0;
+    }
+
+    .footer__title {
+        font-size: 26px;
+        line-height: 30px;
+        padding: 60px 0 40px;
+    }
+
+    .menu__list-item {
+        margin-right: 30px;
+    }
+
+    .menu__list, .footer__icons {
+        width: 270px;
+    }
+    
+    .icon {
+        margin-right: 30px;
+    }   
+    
+    .footer__btn {
+        width: 220px;
+        font-size: 16px;
+        text-transform: none;
+    }
+
+    .footer__btn-white {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }    
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+    .header {
+        width: 330px;
+    }
+
+    .header__title img {
+        width: 230px;
+        height: 80px;
+    }
+
+    .photo_one-new, .photo_two-new, .photo_three-new, .photo_four-new {
+        width: 330px;
+        height: 413px;
+    }
+    
+    .tel {
+        font-size: 16px;
+    }
+
+    .photo {
+        width: 220px;
+        height: 330px;
+    }
+
+    .photo_text {
+        width: 221px;
+        height: 60px;
+        font-size: 20px;
+        padding-top: 22px;
+    }
+
+    .faq {
+        width: 330px;
+    }
+
+    .catalog_line-one, .catalog_line-two {
+        width: 330px;
+    }
+
+    .accordion_title {
+        width: 330px;
+        font-size: 20px;
+    }
+
+
+    .whatssap__title {
+        font-weight: 500;
+    }
+
+    .coupon__btn, .whatssap__btn {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .accordion {
+        margin-top: 0;
+    }
+
+    .footer__title {
+        padding: 0 0 40px;
+    }
+
+    .footer__privacy {
+        width: 330px;
+    }
+
+
+}
